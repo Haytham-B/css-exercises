@@ -8,22 +8,65 @@ body {
   height: 72px;
   background: darkmagenta;
   color: white;
+
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  font-weight: bold;
+  font-size: larger;
 }
 
 .footer {
   height: 72px;
   background: #eee;
   color: darkmagenta;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .sidebar {
   width: 300px;
   background: royalblue;
   box-sizing: border-box;
+  margin-right: 20px;
+
+  display: flex;
+  flex-shrink: 0;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  /* gap:10px */
+
 }
 
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+  width: 350px;
+  height: 300px;
+  margin: 10px;
+  padding: 10px;
+  /* display: flex;
+  flex-wrap: wrap;
+  gap: 10px; */
 }
+
+.content {
+  display: flex;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a:link {
+  color: white;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+li.a {list-style-type: none;}
